@@ -1,53 +1,12 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2822
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-
-\f0\fs24 \cf0 #include <stdio.h>\
-#include <math.h>\
-#include <string.h>\
-\
-// Function to convert a number (string) from base 'base' to decimal\
-int convertToDecimal(char value[], int base) \{\
-    int len = strlen(value);\
-    int result = 0;\
-    int power = 1; // base^0\
-\
-    for (int i = len - 1; i >= 0; i--) \{\
-        int digit;\
-\
-        if (value[i] >= '0' && value[i] <= '9')\
-            digit = value[i] - '0';\
-        else\
-            digit = value[i] - 'A' + 10; // for bases > 10\
-\
-        result += digit * power;\
-        power *= base;\
-    \}\
-    return result;\
-\}\
-\
-int main() \{\
-    // Hardcoded from your first test case JSON\
-    char value1[] = "4";   int base1 = 10;\
-    char value2[] = "111"; int base2 = 2;\
-    char value3[] = "12";  int base3 = 10;\
-    char value4[] = "213"; int base4 = 4;\
-\
-    // Convert them\
-    int root1 = convertToDecimal(value1, base1);\
-    int root2 = convertToDecimal(value2, base2);\
-    int root3 = convertToDecimal(value3, base3);\
-    int root4 = convertToDecimal(value4, base4);\
-\
-    // Print results\
-    printf("Converted roots from Test Case 1:\\n");\
-    printf("%d\\n", root1);\
-    printf("%d\\n", root2);\
-    printf("%d\\n", root3);\
-    printf("%d\\n", root4);\
-\
-    return 0;\
-\}}
+{
+  "name": "hashira_code",
+  "version": "1.0.0",
+  "main": "shamir-secret.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
